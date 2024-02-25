@@ -65,10 +65,21 @@ h4 {
     margin-left: 10px;
     font-style: italic;
 }
+.blogmain {
+    width: 70%;
+}
+.essay,.example {
+    &:hover {
+        border-radius:15px;
+        cursor:pointer;
+        background-color:rgb(137, 218, 255);
+        transition: background-color 500ms ease-in-out ;
+    }
+}
 .blognav {
     width: 25%;
     height: 1000px;
-    background-color: hsla(180, 100%, 50%, 0.205);
+    background-color:aliceblue;
     border-radius:10px;
 }
 .game {
