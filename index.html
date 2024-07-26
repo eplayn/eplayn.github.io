@@ -7,25 +7,9 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/index.css">
     <script>
-        function func1() {
-            var f = document.getElementById("f").href;
-            window.location.href=f;
-        }
-        function func2() {
-            var s = document.getElementById("s").href;
-            window.location.href=s;
-        }
-        function func3() {
-            var t = document.getElementById("t").href;
-            window.location.href=t;
-        }
-        function func4() {
-            var fo = document.getElementById("fo").href;
-            window.location.href=fo;
-        }
-        function func5() {
-            var fi = document.getElementById("fi").href;
-            window.location.href=fi;
+        function goToLink(event) {
+            let link = event.currentTarget.querySelector('a').href;
+            window.location.href = link;
         }
     </script>
 </head>
@@ -44,45 +28,50 @@
     <div class="content">
         <div class="container clearfix">
             <div class="blogmain leftfix">
-                <div class="essay" onclick="func1()">
-                    <a class="topic" id="f" href="./essay1.html" >我的第一篇博客</a>
+                <div class="essay" onclick="goToLink(event)">
+                    <a class="topic" href="./essay1.html" >我的第一篇博客</a>
                     <h3>闲暇之际，硬搓出了我的博客</h3>
                     <h4>Posted by 刘 on 2023.10.2</h4>
                 </div>
-                <div style="margin-top: 35px;" class="essay" onclick="func2()">
-                    <a id="s" href="./essay2.html" class="topic">磁盘也能当音响？</a>
+                <div style="margin-top: 35px;" class="essay" onclick="goToLink(event)">
+                    <a href="./essay2.html" class="topic">磁盘也能当音响？</a>
                     <h3>来不及写了，先看视频吧</h3>
                     <h4>Posted by 刘 on 2023.11.18</h4>
                 </div>
-                <div style="margin-top: 35px;" class="example" onclick="func3()">
-                    <a id="t" href="./checkboxes_ball.html" class="topic">有趣的js效果Ⅰ:Checkboxes_ball</a>
+                <div style="margin-top: 35px;" class="example" onclick="goToLink(event)">
+                    <a href="./checkboxes_ball.html" class="topic">有趣的js效果Ⅰ:Checkboxes_ball</a>
                     <h3>复选框球</h3>
                     <h4>Posted by 刘 on 2024.02.21</h4>
                 </div>
-                <div style="margin-top: 35px;" class="example" onclick="func4()">
-                    <a id="fo" href="./ball-pool.html" class="topic" >有趣的js效果Ⅱ:Ball-pool</a>
+                <div style="margin-top: 35px;" class="example" onclick="goToLink(event)">
+                    <a href="./ball-pool.html" class="topic" >有趣的js效果Ⅱ:Ball-pool</a>
                     <h3>球池</h3>
                     <h4>Posted by 刘 on 2024.02.21</h4>
                 </div>
-                <div style="margin-top: 35px;" class="example" onclick="func5()">
-                    <a id="fi" href="./voxels_liquid_less_wave.html" class="topic">有趣的js效果Ⅲ:Voxels_liquid</a>
+                <div style="margin-top: 35px;" class="example" onclick="goToLink(event)">
+                    <a href="./voxels_liquid_less_wave.html" class="topic">有趣的js效果Ⅲ:Voxels_liquid</a>
                     <h3>体素_液体</h3>
                     <h4>Posted by 刘 on 2024.02.21</h4>
                 </div>
+                <div style="margin-top: 35px;" class="example" onclick="goToLink(event)">
+                    <a href="./essay3.html" class="topic">小小功放</a>
+                    <h3>小小功放</h3>
+                    <h4>Posted by 刘 on 2024.07.26</h4>
+                </div>
             </div>
             <div class="blognav rightfix">
-                <div class="game">
+                <div class="game" onclick="goToLink(event)">
                     <a href="./moto-x3m-pool-party-main/index.html">Game:moto-x3m-pool-party</a>
                 </div>
-                <div class="game">
+                <div class="game" onclick="goToLink(event)">
                     <a href="./h5-game-blockBreaker-master/index.html">Game:Block-breaker</a>
                 </div>
-                <div class="game">
+                <div class="game" onclick="goToLink(event)">
                     <a href="./Flappy-Bird-master/index.html">Game:Flappy-Bird</a>
                 </div>
             </div>
         </div>
     </div>
-    <footer>Copyright © 刘的博客 2024-02-21</footer>
+    <footer>Copyright © 刘的博客 2024-07-26</footer>
 </body>
 </html>
